@@ -1,0 +1,39 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class LoanComparisonUI extends JFrame {
+
+    private JTextField loanAmount1TextField;
+    private JTextField interestRate1TextField;
+    private JTextField repaymentTerm1TextField;
+    private JTextField loanAmount2TextField;
+    private JTextField interestRate2TextField;
+    private JTextField repaymentTerm2TextField;
+    private JButton compareButton;
+    private JTextArea resultTextArea;
+
+    public LoanComparisonUI() {
+        setTitle("Loan Comparison");
+        setLayout(new FlowLayout());
+        setSize(500, 350);
+
+        // Create labels and input fields for loan 1
+        JLabel loanAmount1Label = new JLabel("Loan Amount (Loan 1):");
+        loanAmount1TextField = new JTextField(10);
+        add(loanAmount1Label);
+        add(loanAmount1TextField);
+
+        JLabel interestRate1Label = new JLabel("Interest Rate (Loan 1):");
+        interestRate1TextField = new JTextField(10);
+        add(interestRate1Label);
+        add(interestRate1TextField);
+
+        JLabel repaymentTerm1Label = new JLabel("Repayment Term (Years):");
+        repaymentTerm1TextField = new JTextField(10);
+        add(repaymentTerm1Label);
+        add(repaymentTerm1TextField);
+
+        // Create labels and input fields for loan 2
+        JLabel loanAmount2Label = new JLabel("Loan Amount (Loan 2):");
+        loanAmount2TextField = new JTextField(10)
